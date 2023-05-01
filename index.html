@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>My Pepsi Website</title>
+        <link rel ="stylesheet" href="style.css">
+        </head>
+        <body>
+            <section class ="sec">
+                <header>
+                    <a href="#"><img src="f1-formula-18381-removebg-preview.png" class="logo"></a>
+                    <ul>
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">Races</a></li>
+                        <li><a href="#">What's New</a></li>
+                        <li><a href="#">Newsletter</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
+                </header>
+                <div class="content">
+                    <div class="textbox">
+                        <h2>It's a sport. Winning is  <br><span>the aim</span></h2>
+                        <p>Welcome to the official website of Formula 1, the pinnacle of motorsport. Explore the thrilling world of F1 racing, from legendary drivers to cutting-edge technology. Stay updated with the latest news, race results, and exclusive insights. Join us on this exhilarating journey into the world of Formula 1.</p>
+                        <a href="#">Book your tickets</a>
+                    </div>
+                    <div class="imgbox">
+                        <img src="F1-Ferrari-PNG-File.png"class="pepsi">
+                    </div>
+                </div>
+                <ul class="thumb">
+                    <li><img src="F1-Ferrari-PNG-File.png" onclick="imgSlider('F1-Ferrari-PNG-File.png');changeBgColor('#0062be');"></li>
+                    <li><img src="oleksii-sergiyovych-prev01sw-removebg-preview.png"  onclick="imgSlider('oleksii-sergiyovych-prev01sw-removebg-preview.png');changeBgColor('#FFB52E');"></li>
+                    <li><img src="prev01sw-removebg-preview.png"  onclick="imgSlider('prev01sw-removebg-preview.png');changeBgColor('#1e1e1e');"></li>
+                </ul>
+                <ul class="sci">
+                    <li><a href="#"><img src="facebook.png"></a></li>
+                    <li><a href="#"><img src="twitter.png"></a></li>
+                    <li><a href="#"><img src="instagram.png"></a></li>
+                </ul>
+            </section>
+            <script type="text/javascript">
+                function imgSlider(anything){
+                    document.querySelector('.pepsi').src = anything;
+                }
+                function changeBgColor(color){
+                    const sec = document.querySelector('.sec');
+                    sec.style.background = color;
+                }
+            </script>
+        </body>
+</html>
